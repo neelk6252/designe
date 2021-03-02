@@ -1,0 +1,151 @@
+
+  @media screen and (max-width: 600px) {
+    .floating {  
+     
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: auto;
+        margin-top: auto;
+        position: absolute;
+        display: block;
+        top: -34em;
+        left: 5%;
+
+    }
+  }
+  .blog-text:hover{  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: auto;
+    margin-top:auto;
+   
+}
+
+@keyframes floating {
+    from {
+       transform: translate(0,  0px);
+       filter: drop-shadow(0 5mm 2mm #1b1b1ba8);
+       }
+    50%  { transform: translate(0, -25px);
+      filter: drop-shadow(0 10mm 8mm #180f03a8);
+     }
+    to   { transform: translate(0, -1px);
+      filter: drop-shadow(0 3mm 1mm #33240fa8); }    
+}
+
+@media screen and (max-width: 900px) {
+  html{
+      font-family: 'Lato', sans-serif;
+      background-color: #007bff;
+      color: #fff;
+      font-size:1em;
+      text-rendering: optimizeLegibility;
+      font-weight: 300;
+  }
+}
+
+
+/*********************/
+/******Slider*******/
+/*********************/
+.slideshow {
+  height:77vh;
+  overflow: hidden;
+  width: 100%;
+  animation-iteration-count: infinite;
+  background-position: center;
+  background-size: cover;
+  animation-name:background;
+  animation-duration: 24s;
+  animation-timing-function: ease-out;
+
+}
+
+@keyframes background {
+  0% {
+    background-image:linear-gradient(to top, rgba(16, 16, 17, 0.644), rgba(65, 61, 64, 0.73)),url('../images/slide/1.jpg');
+    animation-delay: 6s;
+    animation-timing-function: ease-in;
+  }
+  33% {
+    background-image:linear-gradient(to top, rgba(16, 16, 17, 0.644), rgba(65, 61, 64, 0.73)), url('../images/slide/19.jpg');
+    animation-delay: 12s;
+    animation-timing-function: ease-in;
+  }
+  66% {
+    background-image:linear-gradient(to top, rgba(16, 16, 17, 0.644), rgba(65, 61, 64, 0.73)),url('../images/slide/2.jpg');
+    transition: 18s;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    background-image:linear-gradient(to top, rgba(45, 45, 47, 0.52), rgba(65, 61, 64, 0.73)) , url('../images/slide/9.jpg');
+    transition: 24s;
+    animation-timing-function: ease-in;
+  }
+}
+
+
+
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+
+
+.slideanimr {
+  opacity: 0;
+   right: 3%;
+
+}
+.slider {
+  opacity: 1;
+  right:-0%;
+  transition: 3s;
+}
+
+.slideaniml {
+  opacity: 0;
+  left: 4%;
+
+}
+.slidel {
+  opacity: 1;
+  left:-0%;
+  transition: 3s;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */

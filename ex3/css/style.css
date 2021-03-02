@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+  font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #3b3a3a;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    font-weight: 300;
+}
+.row{
+    margin: 0 auto;
+    max-width:1024px;
+}
+/****************************/
+/****navigation********/
+/****************************/
+
+.navi{
+    background-color: transparent;
+    color: white;
+    float: right;
+    padding: 10px 0px;
+    list-style-type: none;
+}
+
+.navi li{
+    display: inline-block;
+    padding: 4px 8px;
+}
+.navi li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 80%;
+}
+/****************************/
+/****Logo********/
+/****************************/
+.logo {
+    font-size: 140%;
+    color:white;
+    float: left;
+    height: 100px;
+    width: auto;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.logo i{
+    color: rgb(175, 86, 216);
+}
+/**************************/
+/*  sticky navigation*/
+/**************************/
+.sticky{
+    background-color: rgba(255, 255, 255, 0.959);
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    box-shadow: 0px 2px 3px rgb(243, 243, 243);
+    z-index: 99;
+   
+}
+.sticky ul{
+    padding-right: 10px;
+}
+.sticky .navi li a{
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    font-size: 80%;
+}
+.sticky .navi li{
+    display: inline-block;
+    padding: 0px 8px;
+}
+.sticky .logo {
+    font-size: 110%;
+    color:rgb(31, 30, 30);
+    float: left;
+    height: 50px;
+    width: auto;
+    text-decoration: none;
+    margin-top: 4px;
+    top:50%;
+    padding-left: 10px;
+}
+
+/****************************/
+/****section********/
+/****************************/
+section{
+    padding:80px;
+}
+/****************************/
+/****Header Style********/
+/****************************/
+header{
+    text-transform: uppercase;
+    background-image:linear-gradient(rgba(156, 182, 107, 0.719),rgba(159, 221, 221, 0.644)), url(img/header-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+   background-position: center;
+   height: 100vh;
+}
+.header-syle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 850px;
+    color: #fff;
+    transition:2s;
+    transition-timing-function: ease-in;;
+}
+/****************************/
+/****Blog Section********/
+/****************************/
+.blog-img{
+    width: 100%;
+    overflow: hidden;
+    height:50%;
+    background-position: center center;
+}
+h2,h3{
+    color:rgba(87, 87, 87, 0.945);
+}
+.box{
+    padding:14px 12px;
+}
+.box h2{
+    margin-bottom: 10px;
+}
+.box span{
+    color: black;
+    font-size: 80%;
+}
+.box::after{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #cccbca;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 20px;
+}

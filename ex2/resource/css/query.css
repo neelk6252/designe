@@ -1,0 +1,57 @@
+@media only screen and (max-width:480px){
+
+}
+@media only screen and (max-width:800px){
+    .header-style{
+        width: 100%;
+        padding: 0 3%;
+    }
+    h1{
+        font-size: 175%;
+        letter-spacing: 3px;
+    }
+    .plan-box{
+        width:100%;
+        margin: 0%;
+    }
+    .per-meal-plan{
+        font-size: 70%;
+    }
+    .plan-box div{
+        padding: 8px;
+    }
+    html{
+  font-size: 17px;
+ }section{
+    padding:50px;
+}
+}
+@media only screen and (max-width:1200px){
+    .row {
+        padding: 0 2%;
+
+    }
+    
+}
+@media only screen and (max-width:1050px){
+    .plan-price{
+    
+        font-size: 200%;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .plan-box li i{
+        font-size:70%;
+        margin-right: 2px;
+        padding: 6px 0;
+       }
+       .plan-box li {
+        font-size:100%;
+       }
+       .per-meal-plan{
+        font-size: 90%;
+    }
+    .row {
+        padding: 0 2%;
+    }
+}
